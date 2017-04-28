@@ -3,7 +3,7 @@ import random
 y = random.randint(1,100)
 print (y) 
 tries = 0
-while tries < 5 == True:
+while (tries < 5) == True:
     x = int(input("Guess a number 1-100: "))
     if tries > 5:
         print ("You lose!")

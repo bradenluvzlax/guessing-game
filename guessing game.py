@@ -9,6 +9,7 @@ while tries < 5:
         tries = tries + 1
     elif x == y:
         print ("wow first try!!! YOU WIN")
+        break
     elif x < y:
         print ("Too low!")
         tries = tries + 1

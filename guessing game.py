@@ -1,4 +1,4 @@
-print ("welcome to the guessing game, You have five tries to guess the right number from 1-100")
+print ("welcome to the guessing game, guess the randomly generated number in the range of 1-100 within 5 tries, and you win!")
 import random
 y = random.randint(1,100) 
 tries = 0

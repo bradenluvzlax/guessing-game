@@ -11,22 +11,30 @@ while tries < 5:
         print ("nice guess!!! YOU WIN")
         break
     elif x < y:
+        tries = tries + 1
+        if tries == 5:
+            print ("You lose!")
+            print ("The number was", y)
+            break
         print ("Too low!")
-        tries = tries + 1
-        if tries >= 4:
+        if tries == 4:
             print (5 - tries, "guess left")
         else:
-            print (5 - tries, "guesses left")
+            print (5-tries, "guesses left")
     elif x > y:
-        print ("Too high!")
         tries = tries + 1
-        if tries >= 4:
+        if tries == 5:
+            print ("You Lose!")
+            print ("The number was", y)
+            break
+        print ("Too high!")
+        if tries == 4:
             print (5 - tries, "guess left")
         else:
-            print (5 - tries, "guesses left")
-if tries > 5:
-    print ("You Lose!")
-
+            print (5-tries, "guesses left")
+    elif tries == 5:
+        print ("You Lose!")
+        print ("The number was", y)
         
     
     

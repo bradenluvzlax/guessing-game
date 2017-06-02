@@ -10,6 +10,11 @@ def gameloop():
             tries = tries + 1
         elif x == y:
             print ("nice guess!!! YOU WIN")
+            z = input("Play again?Y/N: ")
+            if z == "Y":
+                replay()
+            elif z == "N":
+                print ("Thanks for playing!")
             break
         elif x < y:
             tries = tries + 1
@@ -32,7 +37,12 @@ def gameloop():
             if tries == 5:
                 print ("You Lose!")
                 print ("The number was", y)
-                replay()
+                z = input("Play Again?Y/N: ")
+                if z == "Y":
+                    replay()
+                elif z == "N":
+                    print ("Thanks for playing!")
+                break
             print ("Too high!")
             if tries == 4:
                 print (5 - tries, "guess left")
@@ -41,9 +51,3 @@ def gameloop():
 def replay():
     gameloop()
 gameloop()
-        
-    
-    
-
-
-    
